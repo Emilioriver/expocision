@@ -47,8 +47,8 @@ class _ExamenPageState extends State<ExamenPage> {
 
     AwesomeDialog(
       context: context,
-      animType: AnimType.SCALE,
-      dialogType: DialogType.INFO,
+       dialogType: DialogType.question,
+      animType: AnimType.topSlide,
       title: titulo,
       desc: mensaje,
       btnOkOnPress: () {},
@@ -66,7 +66,8 @@ class _ExamenPageState extends State<ExamenPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Pregunta 1
-            Text("¿Cuál es la capital de Francia?"),
+               Text("PREGUNTA #1"),
+              Text("¿Que es un API ?"),
             ElevatedButton(
               onPressed: () {
                 setState(() {
@@ -74,7 +75,7 @@ class _ExamenPageState extends State<ExamenPage> {
                   _evaluarPuntuacion();
                 });
               },
-              child: Text("París"),
+                child: Text("Es un puente que solo sirve para aser pagos"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -82,18 +83,19 @@ class _ExamenPageState extends State<ExamenPage> {
                   _evaluarPuntuacion();
                 });
               },
-              child: Text("Madrid"),
+              child: Text("Es un puente que nos ayuda conectar varias app"),
             ),
             SizedBox(height: 20), // Espacio entre preguntas
             // Pregunta 2
-            Text("¿Cuál es la capital de España?"),
+               Text("PREGUNTA #2"),
+             Text("¿Para que nos sirve el comando git branch -d?"),
             ElevatedButton(
               onPressed: () {
                 setState(() {
                   _evaluarPuntuacion();
                 });
               },
-              child: Text("París"),
+              child: Text("Para clonar "),
             ),
             ElevatedButton(
               onPressed: () {
@@ -102,11 +104,15 @@ class _ExamenPageState extends State<ExamenPage> {
                   _evaluarPuntuacion();
                 });
               },
-              child: Text("Madrid"),
+              child: Text("Para eliminar con permisos"),
             ),
+            SizedBox(height: 420),
           ],
         ),
+        
       ),
+      
     );
+    
   }
 }
