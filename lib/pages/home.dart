@@ -34,7 +34,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation Drawer'),
+        title: Text('Navigation Drawer' , style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 42,
+                  fontFamily: 'cursive',
+                ),),
       ),
       drawer: Drawer(
         child: ListView(
@@ -42,14 +46,15 @@ class _HomeState extends State<Home> {
           children:  <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromARGB(117, 246, 110, 36),
+                color: Color.fromARGB(255, 23, 170, 7),
               ),
               child: Text(
                // Ink.image(image: /mia.jpg)
                 'EMILITO',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+                  color: Colors.black,
+                  fontSize: 38,
+                  fontFamily: 'cursive',
                 ),
               ),
             ),
@@ -65,33 +70,39 @@ class _HomeState extends State<Home> {
                 _onSelectItemDrawer(0);
               },
             ),
-           // Divider(
-            //  color: Color.blue,
-           // ),
+           Divider(
+             color: Colors.red,
+                    ),
             ListTile(
-              leading: Icon(Icons.arrow_forward_ios),
+              leading: Icon(Icons.library_add_check_rounded),
               title: Text('ejemplo'),
             onTap: (){
              _onSelectItemDrawer(1);
               },
             ),
+             Divider(
+             color: Colors.red,
+                    ),
             ListTile(
-              leading: Icon(Icons.arrow_forward_ios),
+              leading: Icon(Icons.library_add_check_rounded),
               title: Text('ejemplo2'),
                   onTap: (){
                 _onSelectItemDrawer(2);
               },
             ),
             Divider(
-             color: Colors.blue,
+             color: Colors.red,
                     ),
             ListTile(
-              leading: Icon(Icons.arrow_forward_ios),
+              leading: Icon(Icons.library_add_check_rounded),
               title: Text('ejemplo3'),
                  onTap: (){
                 _onSelectItemDrawer(3);
                  },
             ),
+             Divider(
+             color: Colors.blue,
+                    ),
           ],
         ),
       ),

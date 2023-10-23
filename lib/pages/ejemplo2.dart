@@ -62,7 +62,8 @@ class _ExamenPageState extends State<ExamenPage> {
         title: Text("Examen"),
       ),
       body: Center(
-        child: Column(
+          child: SingleChildScrollView(    //para quitar el limete de la pantalla   
+          child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Pregunta 1
@@ -111,7 +112,7 @@ class _ExamenPageState extends State<ExamenPage> {
         ),
         
       ),
-      
+      )
     );
     
   }

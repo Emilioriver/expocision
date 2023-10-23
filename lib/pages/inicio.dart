@@ -8,11 +8,11 @@ class Inicio extends StatelessWidget{
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
-          Text('Emilio rodriguez rivera',
+          Text('Emilio Alexander rodriguez rivera',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 25,
-            color: Color.fromARGB(255, 7, 8, 100)
+            color: Color.fromARGB(186, 8, 180, 8)
           ),
           ),
           Image.asset('images/anime.jpg',width: 110.50,),
