@@ -8,7 +8,7 @@ class ejemplo extends StatelessWidget {
     return MaterialApp(
       title: "SimpleDialog, AlertDialog, BottomSheet",
       theme: ThemeData(
-        primaryColor: Color.fromARGB(89, 168, 17, 105),
+        primaryColor: Color.fromARGB(165, 103, 31, 73),
       ),
       home: HomePage(),
     );
