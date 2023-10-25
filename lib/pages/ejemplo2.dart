@@ -5,6 +5,7 @@ class ejemplo2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       title: "Examen",
       theme: ThemeData(primarySwatch: Colors.green),
       home: ExamenPage(),
