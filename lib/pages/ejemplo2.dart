@@ -134,16 +134,16 @@ class _ExamenPageState extends State<ExamenPage> {
                 SizedBox(width: 40),
                 // Pregunta 3
                 Text("PREGUNTA #3"),
-                Text("¿Que es un API ?"),
+                Text("¿cuanto es 2+2-3?"),
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
                       _puntuacion +=
-                          3; // Suponiendo que la respuesta correcta vale 5 puntos
+                          3; // Suponiendo que la respuesta correcta vale 3 puntos
                       _evaluarPuntuacion();
                     });
                   },
-                  child: Text("Es un puente que solo sirve para aser pagos"),
+                  child: Text("1"),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -151,12 +151,13 @@ class _ExamenPageState extends State<ExamenPage> {
                       _evaluarPuntuacion();
                     });
                   },
-                  child: Text("Es un puente que nos ayuda conectar varias app"),
+                  child: Text("-1"),
                 ),
                 SizedBox(height: 295),
               ],
             ),
           ),
-        ));
+        )
+       );
   }
 }
