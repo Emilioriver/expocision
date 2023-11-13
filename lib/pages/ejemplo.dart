@@ -24,9 +24,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("awesome dialogs",),
-      ),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(50),
@@ -104,6 +101,7 @@ class _HomePageState extends State<HomePage> {
                           title: "Suceso",
                           desc:
                               "esta es la descripción del impresionante cuadro de diálogo",
+                           btnCancelOnPress: () {},
                           btnOkOnPress: () {})
                       .show();
                 },

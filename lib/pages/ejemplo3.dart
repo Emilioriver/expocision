@@ -8,7 +8,7 @@ class ejemplo3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Confirmación de Borrado",
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.orange),
       home: PaginaPrincipal(),
     );
   }

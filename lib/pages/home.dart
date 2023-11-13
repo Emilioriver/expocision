@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigation Drawer' , style: TextStyle(
+        title: Text('DIALOGO' , style: TextStyle(
                   color: Colors.black,
                   fontSize: 42,
                   fontFamily: 'cursive',

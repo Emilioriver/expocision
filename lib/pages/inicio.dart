@@ -18,7 +18,7 @@ class Inicio extends StatelessWidget {
                   color: Color.fromARGB(186, 8, 180, 8),
                 ),
               ),
-              Image.asset('images/anime.jpg', width: 200),
+              Image.asset('images/mia.jpg', width: 200),
               Text(
                 'TEMA:',
                 style: TextStyle(
